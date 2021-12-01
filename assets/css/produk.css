@@ -1,0 +1,309 @@
+@import url(https://fonts.googleapis.com/css?family=Calibri:400,300,700);
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap");
+
+section {
+  padding-top: 6%;
+  padding-bottom: 5%;
+}
+
+.text-color {
+  color: #fff;
+}
+
+.carousel-item img {
+  height: 400px;
+}
+
+.banner_kiri {
+  background-color: #c05656;
+}
+
+.produk {
+  background-color: #f6f7f9;
+}
+
+/* produk */
+
+.card-buah {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-img img {
+  height: 326px;
+  width: 270px;
+  border-radius: 0.5em;
+}
+
+.produk-2 {
+  vertical-align: middle;
+  display: flex;
+  font-family: "Calibri", sans-serif !important;
+  background-color: #eee;
+}
+
+.mt-100 {
+  margin-top: 100px;
+}
+
+.carousel .carousel-indicators li {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  text-indent: -99px;
+  cursor: pointer;
+  border: 1px solid #fff;
+  background: #fff;
+  border-radius: 2px;
+}
+
+.product-wrapper,
+.product-img {
+  overflow: hidden;
+  position: relative;
+}
+
+.mb-45 {
+  margin-bottom: 45px;
+}
+
+.product-action {
+  bottom: 0px;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  transition: all 0.6s ease 0s;
+}
+
+.product-action-style {
+  background-color: #fff;
+  box-shadow: 0 0 8px 1.7px rgba(0, 0, 0, 0.06);
+  display: inline-block;
+  padding: 16px 2px 12px;
+}
+
+.product-action-style > a {
+  color: #979797;
+  line-height: 1;
+  padding: 0 21px;
+  position: relative;
+}
+
+.product-action-style > a.action-plus {
+  font-size: 18px;
+}
+
+.product-wrapper:hover .product-action {
+  bottom: 20px;
+  opacity: 1;
+}
+
+/* produk 3 */
+
+.produk-3 {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Montserrat", sans-serif;
+  background-color: #eee;
+  padding: 10px;
+}
+
+.con-pro3 {
+  margin: 20px auto;
+}
+
+.overlay p {
+  margin: 0%;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+img.pic1 {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+img.pic2 {
+  width: 100%;
+  height: 624px;
+  object-fit: fill;
+}
+
+.image-top {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-top .overlay {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  padding: 15px 0 15px 15px;
+  color: white;
+}
+
+.image-top:hover .overlay {
+  backdrop-filter: blur(15px);
+  transition: all 0.3s ease-out;
+}
+
+.image-top .overlay::before {
+  content: "";
+  background: #ffff;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -80px;
+  opacity: 0;
+  transition: all 0.3s ease-out;
+}
+
+.image-top:hover .overlay::before {
+  bottom: 0px;
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+.image-middle {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-middle .overlay {
+  position: absolute;
+  bottom: 0px;
+  padding: 15px 0 15px 15px;
+  width: 100%;
+  color: white;
+}
+
+.image-middle .overlay::before {
+  content: "";
+  background: #ffff;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -150px;
+  opacity: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-out;
+}
+
+.image-middle:hover .overlay::before {
+  bottom: 0px;
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+.image-middle:hover .overlay {
+  backdrop-filter: blur(15px);
+  transition: all 0.3s ease-out;
+}
+
+.text-muted {
+  color: #e5e2e2 !important;
+}
+
+/* testi */
+
+.testi {
+  background: #fff;
+}
+
+.con-testi {
+  background-color: white;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 16px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.card-testi {
+  border: none;
+}
+
+.profile img {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+}
+
+.second {
+  border-left: 2px dotted lightgrey;
+  border-right: 2px dotted lightgrey;
+}
+
+@media only screen and (max-width: 600px) {
+  .second {
+    border: none;
+    border-top: 2px dotted lightgrey;
+    margin-top: 25px;
+  }
+
+  .third {
+    border-top: 2px dotted lightgrey;
+    margin-top: 25px;
+  }
+
+  .icon {
+    margin-top: 20px;
+    top: 0;
+  }
+}
+
+.fa-quote-left:before {
+  font-size: 7px;
+  color: orangered;
+  position: relative;
+  bottom: 5px;
+}
+
+.intro {
+  font-size: 11px;
+  margin-left: 13px;
+  position: relative;
+  bottom: 8px;
+}
+
+.row-testi {
+  padding-bottom: 53px;
+}
+
+.company {
+  position: absolute;
+  bottom: -42px;
+}
+
+.fa-amazon:before {
+  content: "\f270";
+  font-size: 23px;
+}
+
+.icon {
+  margin-bottom: 15px;
+  position: relative;
+  bottom: 20px;
+}
+
+.header {
+  padding-top: 35px;
+  padding-bottom: 50px;
+}
+/*  */
+@media (max-width: 930px) {
+  img.pic2 {
+    height: 300px !important;
+    object-fit: cover;
+  }
+
+  P {
+    font-size: 16px;
+  }
+}
